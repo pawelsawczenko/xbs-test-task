@@ -21,7 +21,7 @@ class UserItemView extends View {
   }
 
   _generateUserInput(userAmount) {
-    return `<input type="number" id="user-amount" name="user-amount" value=${userAmount} />`;
+    return `<input type="number" id="user-amount" name="user-amount" value=${userAmount} onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />`;
   }
 
   disableItem() {

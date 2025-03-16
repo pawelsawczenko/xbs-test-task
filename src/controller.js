@@ -31,7 +31,7 @@ function controlDateInput(dateString) {
 
   if (new Date(model.state.pickedDate) > new Date(model.state.todaysDate)) {
     dateItem.renderMessage(
-      "Please choose any date before today or today's date to see the history of exchange rates.",
+      "Please choose any date before today or today's date to use the converter.",
       "error"
     );
     userItem.disableItem();
